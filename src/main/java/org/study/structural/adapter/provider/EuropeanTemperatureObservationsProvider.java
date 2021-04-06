@@ -15,7 +15,8 @@ public class EuropeanTemperatureObservationsProvider
     private final Map<LocalDate, Float> observationsData = Map.ofEntries(
             Map.entry(LocalDate.of(1993, 10, 15), 15.6f),
             Map.entry(LocalDate.of(1993, 10, 16), 16.6f),
-            Map.entry(LocalDate.of(1993, 10, 17), 17.6f)
+            Map.entry(LocalDate.of(1993, 10, 17), 17.6f),
+            Map.entry(LocalDate.of(1993, 10, 25), 0.0f)
     );
 
     /**

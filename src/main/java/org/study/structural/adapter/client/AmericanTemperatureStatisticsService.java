@@ -10,7 +10,12 @@ import java.util.stream.Stream;
 public class AmericanTemperatureStatisticsService
         implements TemperatureStatisticsService {
 
-    private TemperatureObservationsProvider observationsProvider;
+    private final TemperatureObservationsProvider observationsProvider;
+
+    public AmericanTemperatureStatisticsService
+            (TemperatureObservationsProvider observationsProvider) {
+        this.observationsProvider = observationsProvider;
+    }
 
     /**
      * @param startDate Starting date of the period
